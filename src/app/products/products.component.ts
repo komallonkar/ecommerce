@@ -34,8 +34,8 @@ export class ProductsComponent {
   }
 filterProductsByCategory(category: string) {
   console.log('Selected category:', category);
-  if (category === 'All') {
-    this.productList();
+  if (category === 'all') {
+    this.products = [...this.allproducts];
   } else {
     console.log('Filtering products by category:', category);
     this.products = this.allproducts.filter((product: { category: string }) => product.category === category);
