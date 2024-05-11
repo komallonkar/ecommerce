@@ -1,0 +1,13 @@
+.sidebar-wrap {
+  transition: width ease 250ms;
+  width: 0;
+  background-color: darkblue;
+  color: whitesmoke;
+  padding: 0px;
+  height: calc(100vh - 56px);
+}
+.sidebar-wrap.open {
+  width: 250px;
+  padding: 10px;
+  transition: width ease 250ms;
+}

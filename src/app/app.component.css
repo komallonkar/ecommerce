@@ -1,0 +1,12 @@
+
+.products-wrap {
+  width: calc(100% - 250px);
+  transition: width ease 250ms;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.products-wrap app-products{
+  height: calc(100vh - 60px);
+  display: block;
+}
+
