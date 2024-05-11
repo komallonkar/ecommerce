@@ -1,5 +1,5 @@
 <section class="sidebar-wrap" [class.open]="sidebarOpen">
-    <ul>
+    <ul class="m-0 p-0">
         <li (click)="selectCategory('all')">All</li>
         <li (click)="selectCategory(uniqueCategorie)" *ngFor="let uniqueCategorie of uniqueCategories">
            {{ uniqueCategorie }}

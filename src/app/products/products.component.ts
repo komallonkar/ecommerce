@@ -29,13 +29,13 @@ export class ProductsComponent {
     this._sharedService.getProducts().subscribe((res) => {
       this.allproducts = res;
       this.products = [...this.allproducts]
-      // console.log(this.products);
+      console.log(this.allproducts);
     })
   }
 filterProductsByCategory(category: string) {
   console.log('Selected category:', category);
   if (category === 'All') {
-     this.products = [...this.allproducts];
+    this.productList();
   } else {
     console.log('Filtering products by category:', category);
     this.products = this.allproducts.filter((product: { category: string }) => product.category === category);

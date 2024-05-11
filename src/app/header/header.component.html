@@ -1,9 +1,14 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Shopify</a>
-    <button class="sidebar-toggler" type="button" aria-label="Toggle sidebar" (click)="toggleSidebar()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div>
+      <button class="btn btn-dark">
+        <fa-icon [icon]="faCartShopping"></fa-icon>
+      </button>
+      <button class="btn btn-dark" type="button" aria-label="Toggle sidebar" (click)="toggleSidebar()">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </button>
 
+    </div>
   </div>
 </nav>

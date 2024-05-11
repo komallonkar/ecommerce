@@ -11,3 +11,6 @@
   padding: 10px;
   transition: width ease 250ms;
 }
+.sidebar-wrap li{
+    cursor: pointer;
+}

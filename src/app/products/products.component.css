@@ -3,3 +3,10 @@
   height: 200px;
   object-fit: contain;
 }
+
+.card-title{
+  height: 25px;
+}
+.card-text{
+  height: 90px;
+}
