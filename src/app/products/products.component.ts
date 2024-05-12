@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FilterProductsService } from '../filter-products.service';
 import { ProductListingService } from '../product-listing.service';
+import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -11,6 +12,7 @@ export class ProductsComponent {
   products: any;
   newProducts: any;
   categorySubscription: any;
+  faIndianRupeeSign = faIndianRupeeSign;
   constructor(private _sharedService: ProductListingService,
     private getFiltredProducts: FilterProductsService
   ) { }

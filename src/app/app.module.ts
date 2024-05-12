@@ -11,6 +11,7 @@ import { MyCustomPipePipe } from './my-custom-pipe.pipe';
 import { CharacterLimitPipe } from './character-limit.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductsComponent,
     MyCustomPipePipe,
     CharacterLimitPipe,
-    ProductDetailComponent
+    ProductDetailComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

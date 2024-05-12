@@ -10,5 +10,6 @@ export class FilterProductsService {
   constructor() { }
   updateCategory(category: string) {
     this.selectedCategorySubject.next(category);
+    // alert(category + ' is selected');
   }
 }

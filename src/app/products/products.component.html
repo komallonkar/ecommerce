@@ -6,6 +6,11 @@
             <div class="card-body">
               <h5 class="card-title">{{ product.title | characterLimit:15 }}</h5>
               <p class="card-text">{{ product.description | characterLimit:80 }}</p>
+              <p>
+                <fa-icon [icon]="faIndianRupeeSign"></fa-icon>{{ product.price }}
+              </p>
+              <app-star-rating [rating]="4"></app-star-rating>
+
               <a href="#" class="btn btn-primary">Add to cart</a>
             </div>
 

@@ -1,0 +1,5 @@
+<div class="star-rating">
+  <span class="star" *ngFor="let _ of [].constructor(5); let i = index">
+    <i class="fa" [ngClass]="{'fa-star': i < 5, 'fa-star-o': i >=3 }"></i>
+  </span>
+</div>
