@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyCustomPipePipe } from './my-custom-pipe.pipe';
 import { CharacterLimitPipe } from './character-limit.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SidebarComponent,
     ProductsComponent,
     MyCustomPipePipe,
-    CharacterLimitPipe
+    CharacterLimitPipe,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

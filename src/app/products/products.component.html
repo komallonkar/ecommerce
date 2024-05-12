@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="products-wrap container-fluid">
   <div class="g-2 row row-cols-5">
     <div *ngFor="let product of products" class="col">
-        <div class="card">
+        <a [routerLink]="['/product', product.id]"  class="card">
             <img src="{{ product.image }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ product.title | characterLimit:15 }}</h5>
@@ -9,7 +9,7 @@
               <a href="#" class="btn btn-primary">Add to cart</a>
             </div>
 
-        </div>
+        </a>
     </div>
   </div>
 
