@@ -1,7 +1,8 @@
 <div class="products-wrap container-fluid">
   <div class="g-2 row row-cols-5">
     <div *ngFor="let product of products" class="col">
-        <a [routerLink]="['/product', product.id]"  class="card">
+      <div class="card">
+        <a [routerLink]="['/product', product.id]"  >
             <img src="{{ product.image }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ product.title | characterLimit:15 }}</h5>
@@ -11,10 +12,12 @@
               </p>
               <app-star-rating [rating]="4"></app-star-rating>
 
-              <a href="#" class="btn btn-primary">Add to cart</a>
             </div>
+            
+          </a>
+          <button (click)="addToCart(product)" class="btn btn-primary">Add to cart</button>
 
-        </a>
+      </div>
     </div>
   </div>
 

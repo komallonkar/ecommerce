@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FilterProductsService } from '../filter-products.service';
 import { ProductListingService } from '../product-listing.service';
 import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { AddToCartService } from '../add-to-cart.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -14,7 +15,8 @@ export class ProductsComponent {
   categorySubscription: any;
   faIndianRupeeSign = faIndianRupeeSign;
   constructor(private _sharedService: ProductListingService,
-    private getFiltredProducts: FilterProductsService
+    private getFiltredProducts: FilterProductsService,
+    private addCart: AddToCartService
   ) { }
   ngOnInit() {
     this.productList();
@@ -44,5 +46,11 @@ filterProductsByCategory(category: string) {
     console.log(this.products);
   }
 }
+  addToCart(product:any) {
+    console.log(product);
+    this.addCart.addToCart(product);
+
+    
+  }
 
 }

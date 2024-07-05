@@ -9,6 +9,7 @@ import { faCartShopping, faBars } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent {
   faCartShopping = faCartShopping;
   faBars = faBars;
+  cartlist: string = '/cart';
   constructor(private SidebarNavService: SidebarNavService  ) { }
   toggleSidebar() {
    
