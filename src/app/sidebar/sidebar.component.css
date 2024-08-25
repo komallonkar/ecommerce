@@ -1,16 +1,28 @@
 .sidebar-wrap {
   transition: width ease 250ms;
   width: 0;
-  background-color: darkblue;
-  color: whitesmoke;
+  background-color: #4747546b;
+  color: #130c0c;
   padding: 0px;
   height: calc(100vh - 56px);
+}
+.sidebar-wrap ul li {
+  margin: 5px 0;
+  padding: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.347);
+  border-radius: 5px;
+}
+.sidebar-wrap ul li:hover {
+   background-color: #474754c1;
+  color: whitesmoke;
+
 }
 .sidebar-wrap.open {
   width: 250px;
   padding: 10px;
   transition: width ease 250ms;
 }
-.sidebar-wrap li{
-    cursor: pointer;
+.sidebar-wrap li {
+  cursor: pointer;
 }

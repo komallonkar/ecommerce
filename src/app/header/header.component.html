@@ -2,8 +2,9 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Shopify</a>
     <div>
-      <a [routerLink]="cartlist" class="btn btn-dark">
+      <a [routerLink]="cartlist" class="btn btn-dark cart" matBadge="{{cartItem}}" matBadgeOverlap="true">
         <fa-icon [icon]="faCartShopping"></fa-icon>
+        <!-- <span class="cart-count">4</span> -->
       </a>
       <button class="btn btn-dark" type="button" aria-label="Toggle sidebar" (click)="toggleSidebar()">
         <fa-icon [icon]="faBars"></fa-icon>

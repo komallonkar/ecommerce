@@ -1,7 +1,13 @@
 <!-- <p>product-detail works!</p> -->
 <div *ngIf="product">
-  <img src="{{ product.image }}" alt="">
-  <h2>{{ product.title }}</h2>
-  <p>{{ product.description }}</p>
+  <div class="d-flex gap-5">
+    <img src="{{ product.image }}" height="200" width="200" alt="{{product.description}}">
+    <div>
+      <h2>{{ product.title }}</h2>
+      <p>{{ product.description }}</p>
+
+    </div>
+
+  </div>
   <!-- Add more details as needed -->
 </div>

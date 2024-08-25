@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { FilterProductsService } from '../filter-products.service';
 import { ProductListingService } from '../product-listing.service';
 import { SidebarNavService } from './../sidebar-nav.service';
-import { FilterProductsService } from '../filter-products.service';
 
 @Component({
   selector: 'app-sidebar',
