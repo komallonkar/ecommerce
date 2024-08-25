@@ -17,9 +17,7 @@ export class AddToCartService {
   }
   saveToCart() {
     localStorage.setItem(storage_key, JSON.stringify(this.item));
-   
-    
-    this.loadCart();
+   this.loadCart();
   }
   addToCart(product: any) {
     this.item.push(product);

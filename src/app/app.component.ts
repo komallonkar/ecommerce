@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   // imports: [FontAwesomeModule],
   styleUrls: ['./app.component.css']
 })
+  
 export class AppComponent {
   title = 'Shopping';
   // faCartShopping = faCartShopping;

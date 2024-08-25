@@ -14,6 +14,7 @@ export class ProductsComponent {
   newProducts: any;
   categorySubscription: any;
   faIndianRupeeSign = faIndianRupeeSign;
+  addedProductsID: Set<number> = new Set();
   constructor(
     private _sharedService: ProductListingService,
     private getFiltredProducts: FilterProductsService,
@@ -53,5 +54,11 @@ export class ProductsComponent {
   addToCart(product: any) {
     console.log(product);
     this.addCart.addToCart(product);
+    this.addedProductsID.add(product.id);
+    console.log(this.addedProductsID);
+  }
+  isProductAdded(product: any): boolean {
+    return this.addedProductsID.has(product.id);
+    
   }
 }

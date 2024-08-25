@@ -15,7 +15,8 @@
             </div>
             
           </a>
-          <button (click)="addToCart(product)" class="btn btn-primary">Add to cart</button>
+          <button (click)="addToCart(product)" [disabled]="isProductAdded(product)" class="btn btn-primary">
+           {{ isProductAdded(product) ? 'Added to cart' : 'Add to cart' }} </button>
 
       </div>
     </div>
