@@ -20,15 +20,16 @@
         </tr>
    </thead> 
    <tbody>
-        <tr class="cart-item" *ngFor="let item of listitems">
+        <tr class="cart-item" *ngFor="let item of listitems" id="{{ item.id }}">
             <td>
                  <img height="100" width="100" src="{{item.image}}">
             </td>
             <td>
                 {{ item.price }}
             </td>
-            <td>
-                q
+            <td class="cart-item-quantity">
+               <button class="btn btn-dark cart-item-reduce" (click)="updateQualityCount(quantityLabel,-1)">-</button>
+               <label id="quality" #quantityLabel>1</label><button class="btn btn-dark cart-item-increase" (click)="updateQualityCount(quantityLabel,1)">+</button>
             </td>
             <td>
                 q
@@ -47,4 +48,14 @@
                 </td>
         </tr>
    </tbody>
+   <tfoot>
+        <tr>
+            <td>
+                Total
+            </td>
+            <td>
+
+            </td>
+        </tr>
+   </tfoot>
 </table>

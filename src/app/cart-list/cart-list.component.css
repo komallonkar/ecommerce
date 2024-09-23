@@ -6,3 +6,15 @@
 .cart-item img{
     object-fit: contain;
 }
+
+.cart-item-quantity label {
+    background-color: rgba(128, 128, 128, 0.596);
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+    height: 38px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
