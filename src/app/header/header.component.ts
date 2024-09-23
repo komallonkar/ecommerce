@@ -3,6 +3,7 @@ import { faBars, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { AddToCartService } from './../add-to-cart.service';
 import { Product } from './../product.model';
 import { SidebarNavService } from './../sidebar-nav.service';
+import { Router } from '@angular/router';
 const storage_key = "cartItem";
 @Component({
   selector: 'app-header',
@@ -16,7 +17,8 @@ export class HeaderComponent {
   faBars = faBars;
   cartlist: string = '/cart';
   constructor(private SidebarNavService: SidebarNavService,
-    private AddToCartService: AddToCartService
+    private AddToCartService: AddToCartService,
+    private router: Router
     ) { }
   toggleSidebar() {
    
@@ -28,6 +30,5 @@ export class HeaderComponent {
     })
 
   }
-  
  
 }

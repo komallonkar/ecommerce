@@ -3,6 +3,7 @@ import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
 import { AddToCartService } from '../add-to-cart.service';
 import { FilterProductsService } from '../filter-products.service';
 import { ProductListingService } from '../product-listing.service';
+const storage_key = "cartItem";
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',

@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Shopify</a>
+    <a class="navbar-brand" [routerLink]="['/']">Shopify</a>
     <div>
       <a [routerLink]="cartlist" class="btn btn-dark cart" matBadge="{{cartItem}}" matBadgeOverlap="true">
         <fa-icon [icon]="faCartShopping"></fa-icon>

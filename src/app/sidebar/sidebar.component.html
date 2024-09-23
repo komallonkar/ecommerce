@@ -1,6 +1,6 @@
 <section class="sidebar-wrap" [class.open]="sidebarOpen">
   <ul class="m-0 p-0">
-    <li (click)="selectCategory('all')" [routerLink]="">All</li>
+    <li (click)="selectCategory('all')" [routerLink]="['/']">All</li>
     <li (click)="selectCategory(uniqueCategorie)" *ngFor="let uniqueCategorie of uniqueCategories">
       {{ uniqueCategorie }}
     </li>

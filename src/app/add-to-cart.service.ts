@@ -16,6 +16,9 @@ export class AddToCartService {
     this.loadCart();
   }
   saveToCart() {
+    this.item = this.item.map((item: any) => {
+      return { ...item, quantity: 1,totalPrice: item.price};
+    })
     localStorage.setItem(storage_key, JSON.stringify(this.item));
    this.loadCart();
   }
@@ -23,7 +26,6 @@ export class AddToCartService {
     this.item.push(product);
     console.log(this.item);
     this.saveToCart();
-     
   }
   getCartItems() {
     return this.item;
